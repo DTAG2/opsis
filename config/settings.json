@@ -1,0 +1,57 @@
+{
+  "general": {
+    "app_name": "CV Overlay System",
+    "version": "1.0.0",
+    "debug_mode": true
+  },
+  "screen_capture": {
+    "target_fps": 30,
+    "capture_region": null,
+    "capture_monitor": 2,
+    "use_gpu": true
+  },
+  "detection": {
+    "model_path": "./models/standard/yolo12n.pt",
+    "confidence_threshold": 0.3,
+    "iou_threshold": 0.45,
+    "target_classes": ["person"],
+    "inference_device": "mps",
+    "image_size": 640,
+    "half_precision": false
+  },
+  "overlay": {
+    "enabled": true,
+    "box_color": [0, 255, 0],
+    "box_thickness": 2,
+    "show_labels": true,
+    "show_confidence": true,
+    "transparency": 0.7,
+    "target_point_color": [255, 0, 0],
+    "target_point_size": 5
+  },
+  "mouse_control": {
+    "enabled": false,
+    "target_priority": "head",
+    "smoothing_factor": 0.01,
+    "max_move_speed": 100,
+    "enable_stabilization": true,
+    "stabilization_strength": 0.7,
+    "aim_offset_x": 0,
+    "aim_offset_y": 0
+  },
+  "hotkeys": {
+    "toggle_overlay": "F1",
+    "toggle_mouse_control": "F2",
+    "toggle_menu": "F3",
+    "reload_config": "F4",
+    "exit_program": "F5"
+  },
+  "training": {
+    "data_dir": "data/datasets",
+    "epochs": 100,
+    "batch_size": 16,
+    "image_size": 640,
+    "learning_rate": 0.001,
+    "augmentation": true
+  }
+}

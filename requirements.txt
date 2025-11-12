@@ -1,0 +1,41 @@
+# Core ML/CV Dependencies
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Screen Capture (choose based on platform)
+mss>=9.0.0  # Cross-platform
+# dxcam  # Uncomment for Windows high-performance capture
+
+# Input Control
+pynput>=1.7.6
+pyautogui>=0.9.54
+
+# macOS-specific (for click-through overlay)
+pyobjc-framework-Cocoa>=9.0; sys_platform == 'darwin'
+
+# GUI
+customtkinter>=5.2.0
+# PyQt5>=5.15.0  # Alternative GUI option
+
+# Configuration & Utilities
+pyyaml>=6.0
+pydantic>=2.0.0
+loguru>=0.7.0
+
+# Data Processing & Visualization
+matplotlib>=3.7.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Optional: For ONNX model export
+# onnx>=1.14.0
+# onnxruntime-gpu>=1.15.0  # For GPU inference
+
+# Development Dependencies
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
