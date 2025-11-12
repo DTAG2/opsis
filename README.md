@@ -4,7 +4,7 @@ Real-time computer vision overlay with YOLO object detection and automated mouse
 
 **Tech Stack**: Python 3.10+, YOLO (ultralytics), PyTorch, OpenCV, customtkinter, mss, pynput
 
-![Example AI Detection Overlay](./runs/detect/predict2/image.jpg)
+![Example AI Detection Overlay](./images/image.jpg)
 
 ## Features
 
